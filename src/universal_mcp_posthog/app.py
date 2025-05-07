@@ -4,7 +4,7 @@ from universal_mcp.integrations import Integration
 
 class PosthogApp(APIApplication):
     def __init__(self, integration: Integration = None, **kwargs) -> None:
-        super().__init__(name='posthogapp', integration=integration, **kwargs)
+        super().__init__(name='posthog', integration=integration, **kwargs)
         self.base_url = "https://us.posthog.com"
 
     def is_generating_demo_data_retrieve(self, organization_id, id) -> dict[str, Any]:

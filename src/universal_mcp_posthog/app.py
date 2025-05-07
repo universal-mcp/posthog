@@ -3395,7 +3395,7 @@ class PosthogApp(APIApplication):
             dict[str, Any]: API response data.
 
         Tags:
-            subscriptions
+            subscriptions, important
         """
         if project_id is None:
             raise ValueError("Missing required parameter 'project_id'")
@@ -3674,7 +3674,7 @@ class PosthogApp(APIApplication):
             dict[str, Any]: API response data.
 
         Tags:
-            surveys
+            surveys, important
         """
         if project_id is None:
             raise ValueError("Missing required parameter 'project_id'")
@@ -3813,7 +3813,7 @@ class PosthogApp(APIApplication):
             dict[str, Any]: API response data.
 
         Tags:
-            surveys
+            surveys, important
         """
         if project_id is None:
             raise ValueError("Missing required parameter 'project_id'")
